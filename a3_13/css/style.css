@@ -1,0 +1,244 @@
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans Regular"), 
+         local("OpenSans-Regular"), 
+         url(../fonts/OpenSans-Regular.ttf) format("ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), 
+         local("OpenSans-Italic"), 
+         url(../fonts/OpenSans-Italic.ttf) format("ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans SemiBold"), 
+         local("OpenSans-SemiBold"), 
+         url(../fonts/OpenSans-SemiBold.ttf) format("ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans SemiBold Italic"), 
+         local("OpenSans-SemiBoldItalic"), 
+         url(../fonts/OpenSans-SemiBoldItalic.ttf) format("ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), 
+         local("OpenSans-Bold"),
+         url(../fonts/OpenSans-Bold.ttf) format("ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), 
+         local("OpenSans-BoldItalic"), 
+         url(../fonts/OpenSans-BoldItalic.ttf) format("ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans ExtraBold"), 
+         local("OpenSans-ExtraBold"), 
+         url(../fonts/OpenSans-ExtraBold.ttf) format("ttf");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans ExtraBold Italic"), 
+         local("OpenSans-ExtraBoldItalic"), 
+         url(../fonts/OpenSans-ExtraBoldItalic.ttf) format("ttf");
+}
+
+.landing {
+    flex-direction: column;
+    font-family: "Open Sans", 
+                 Helvetica, 
+                 Arial, 
+                 sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.header {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1249px;
+    min-height: 89px;
+    padding: 29px 0 0 0;
+}
+
+.wrap_gray {
+    background-color: #f6f2f2;
+}
+
+.main_menu {
+    align-items: stretch;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main_menu__item {
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    min-height:  89px;
+
+}
+
+.main_menu__item_link {
+    align-items: center;
+    color: #e0e0e0;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main_menu__item_link:hover {
+    background-color: #ff3f40;
+}
+
+.intro {
+    align-items:  flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1249px;
+    padding: 103px 0 94px 0;
+}
+
+
+.intro__content {
+    margin: 0;
+}
+
+.intro__heading {
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    margin: 0 75px 18px 0;
+    max-width: 618px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.intro__heading_accent {
+    letter-spacing: 10px;
+}
+
+.intro__text {
+    font-size:  16px;
+    line-height:  1.6;
+    margin: 0 0 50px 0;
+    max-width:  545px;
+    opacity: 0.7;
+}
+
+.intro__image {
+    padding: 0;
+}
+
+.contact__button {
+    align-items: center;
+    background-color: #ff2d2d;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    min-height: 55px;
+    padding: 0;
+    text-decoration: none;
+    width: 227px;
+}
+
+.footer {
+    background-color: #313030;
+}
+
+.footer__content {
+    align-items:  center;
+    display:  flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1249px;
+    min-height:  113px;
+    padding:  0;
+}
+
+.footer__copyright {
+    color: #b8b8b8;
+    font-size:  16px;
+    line-height: 1.6;
+}
+
+.footer__social_links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__social_link {
+    height: 33px;
+    margin: 9px 9px 9px 9px;
+    width: 33px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .intro {
+        flex-wrap: wrap;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .intro__image {
+        padding-top: 1vw;
+    }
+}
