@@ -276,13 +276,13 @@
 .portfolio_block_heading {
     font-size: 24px;
     font-weight: 600;
-    margin:  0 0 13px 0;
+    margin: 0 0 13px 0;
 }
 
 .portfolio_right_text {
     font-size:  16px;
     line-height:  1.75;
-    margin:  0;
+    margin: 0;
     opacity: 0.7;
 }
  
@@ -296,7 +296,7 @@
     font-size: 42px;
     font-weight: 700;
     margin: 0 0 28px 0;
-    opacity:  0.7; 
+    opacity: 0.7; 
     padding: 0;
     text-align:  center;
     text-transform: uppercase;
@@ -308,7 +308,7 @@
     margin: 0 auto;
     max-width:  535px;
     opacity: 0.7;
-    padding:  0 0 24px 0;
+    padding: 0 0 24px 0;
     text-align:  center;
 }
 
@@ -369,6 +369,150 @@
 
 .feature_photo {
     margin-bottom: 16px;
+}
+
+.about {
+    margin: 0 auto;
+    max-width: 1249px;
+    padding: 0 0 63px 0;
+}
+
+.about__description {
+    margin: 0;
+    max-width: 478px;
+    text-align: left;
+}
+
+.about__heading {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 28px 0;
+    opacity: 0.7; 
+    padding: 0;
+    text-transform: uppercase
+}
+
+.about__text {
+    font-size:  16px;
+    line-height:  1.75;
+    margin: 0;
+    opacity: 0.7;
+    padding: 0 0 24px 0;
+}
+
+.about__divider {
+    background: #ff2d2d;
+    border: 0;
+    height: 5px;
+    margin-left: 0;
+    width:  134px;
+}
+
+.about__portraits {
+    align-items:  flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0 50px 0;
+}
+
+.about__man_portrait {
+    margin: 0 30px 0 0;
+    padding: 0;
+}
+
+.about__man_portrait_picture {
+    background-color: #ff2d2d;
+    height: 460px;
+    margin-right: 10px;
+    width: 324px;
+}
+
+.about__others {
+    align-items:  flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content:  flex-end;    
+}
+
+.about__man {
+    align-items:  flex-start;
+    display:  flex;
+    flex-direction: column;
+    justify-content:  flex-end;
+    margin:  0 0 74px 0;
+    max-width: 602px; 
+}
+
+.about__man_heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin:  0 0 20px 0;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+.about__man_text {
+    font-size:  16px;
+    line-height:  1.75;
+    margin: 0;
+    opacity: 0.7;
+    padding: 0 0 24px 0;
+}
+
+.about__social_links {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about__socal_link_item {
+    margin: 0 30px 0 0;
+}
+
+.about__social_link {
+    color:  #000000;
+    font-size:  16px;
+    font-style: italic;
+    text-decoration: none
+}
+
+.about__social_link:hover {
+    text-decoration: underline;
+}
+
+.about__others_portraits {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+}
+
+.about__girl_portrait {
+    height: 214px;
+    margin: 10px 10px 0 0;
+    width: 197px;
+}
+
+.about__girl_name {
+    background-color: #000000;
+    box-sizing: border-box;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity:  0.7;
+    padding:  8px 0 8px 0;
+    text-align: center;
+    height:  37px;
+ /*    visibility: hidden; */
+    width: 197px;
+}
+
+.about__girl_portrait_picture {
+    background-color: #ff2d2d;
+    height: 214px;
+    width: 197px;
 }
 
 .footer {
