@@ -570,8 +570,8 @@
 
 .form__elements {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .form__elements_email {
@@ -607,17 +607,10 @@
 /* Section 6: CONTACT */
 
 .contact {
-    margin: 0 auto;
-    max-width: 1249px;
-    padding: 106px 0 63px 0;
-}
-
-.contact__form {
-    align-items:  flex-start;
+    align-items: flex-end;
     display: flex;
-    justify-content: space-between;
-    margin: 70px 0 94px 0;
-    overflow: hidden;
+    justify-content: center;
+    padding: 106px 0 110px 0;
 }
 
 .contact__form_elements {
@@ -629,9 +622,9 @@
 }
 
 .contact__description {
-    align-items:  flex-start;
+    align-items: flex-start;
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
 }
 
 .contact__heading {
@@ -707,8 +700,8 @@
 }
 
 .contact__form_address {
-    align-self:  flex-end;
     align-items:  flex-start;
+    align-self:  flex-end;
     background-color: #2d2d2d;
     display:  flex;
     flex-direction:  column;
@@ -735,6 +728,18 @@
 .contact__form_address_link {
     color: #ffffff;
     text-decoration: none;
+}
+
+/* Left and right boxes for CONTACT section */
+
+.contact__left_margin {
+    flex: 1 1 auto;
+}
+
+.contact__right_margin {
+    background-color: #2d2d2d;
+    flex: 1 1 auto;
+    min-height:  480px;
 }
 
 /* Footer */
@@ -773,18 +778,4 @@
     height: 33px;
     margin: 9px 9px 9px 9px;
     width: 33px;
-}
-
-/* Media */
-
-@media screen and (max-width: 750px) {
-    .intro {
-        flex-wrap: wrap;
-        padding-left: 1vw;
-        padding-right: 1vw;
-    }
-
-    .intro__image {
-        padding-top: 1vw;
-    }
 }
