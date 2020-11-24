@@ -523,6 +523,7 @@
     padding:  8px 0 8px 0;
     position: absolute;
     text-align: center;
+    text-transform: uppercase;
     visibility: hidden;
     width: 197px;
 }
