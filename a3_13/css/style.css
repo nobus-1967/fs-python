@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-display: swap;
     font-family: "Open Sans";
@@ -78,6 +79,8 @@
          url(../fonts/OpenSans-ExtraBoldItalic.ttf) format("ttf");
 }
 
+/* Page */
+
 .landing {
     flex-direction: column;
     font-family: "Open Sans", 
@@ -90,6 +93,8 @@
     min-height: 100vh;
     padding: 0;
 }
+
+/* Header */
 
 .header {
     box-sizing: border-box;
@@ -136,6 +141,8 @@
 .main_menu__item_link:hover {
     background-color: #ff3f40;
 }
+
+/* Section 1: INTRO */
 
 .intro {
     align-items:  flex-start;
@@ -186,12 +193,14 @@
     display: inline-block;
     font-size: 18px;
     font-weight: 700;
-    min-height: 55px;
+    height: 55px;
     padding: 16px 0 16px 0;
     text-align: center;
     text-decoration: none;
     width: 227px;
 }
+
+/* Section 2: PORTFOLIO */
 
 .wrap_white {
     background-color: #ffffff;
@@ -241,8 +250,8 @@
     display: inline-block;
     font-size: 18px;
     font-weight: 700;
-    min-height: 55px;
-    padding: 16px 0 16px 0;
+    height: 55px;
+    padding: 14px 0 14px 0;
     text-align: center;
     text-decoration: none;
     width: 227px;
@@ -285,6 +294,8 @@
     margin: 0;
     opacity: 0.7;
 }
+
+/* Section 3: FEATURE */
  
 .feature {
     margin: 0 auto;
@@ -370,6 +381,8 @@
 .feature_photo {
     margin-bottom: 16px;
 }
+
+/* Section 4: ABOUT */
 
 .about {
     margin: 0 auto;
@@ -519,6 +532,8 @@
     background-color: #2c2c2c;
 }
 
+/* Section 5: FORM */
+
 .form {
     margin: 0 auto;
     max-width: 1249px;
@@ -570,8 +585,8 @@
     display: inline-block;
     font-size: 18px;
     font-weight: 700;
+    height: 82px;
     margin:  20px 0 0 0;
-    min-height: 82px;
     padding: 30px 0 30px 0;
     text-align: center;
     text-decoration: none;
@@ -579,12 +594,147 @@
     width: 217px;
 }
 
+/* Section 6: CONTACT */
+
+.contact {
+    margin: 0 auto;
+    max-width: 1249px;
+    padding: 106px 0 63px 0;
+}
+
+.contact__description {
+    margin: 0;
+    max-width: 478px;
+    text-align: left;
+}
+
+.contact__heading {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 28px 0;
+    opacity:  0.7;
+    padding: 0;
+    text-transform: uppercase
+}
+
+.contact__text {
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+    padding: 0 0 24px 0;
+}
+
+.contact__divider {
+    background: #ff2d2d;
+    border: 0;
+    height: 5px;
+    margin-left: 0;
+    width:  134px;
+}
+
+.contact__form {
+    align-items:  flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 94px 0;
+}
+
+.contact__form_elements {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: space-between;
+    max-width: 734px;
+}
+
+.contact__elements_name, .contact__elements_email {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000000;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px 0 20px 0;
+    min-height: 72px;
+    min-width: 342px;
+    opacity: 0.7;
+    padding: 24px 0 24px 30px;
+ 
+}
+
+.contact__elements_message {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000000;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px 0 20px 0;
+    min-height: 252px;
+    min-width: 734px;
+    opacity: 0.7;
+    padding: 24px 0 0 30px; 
+}
+
+.contact__form_elements_button {
+    background-color: #ff2d2d;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    height: 75px;
+    margin:  20px 0 0 0;
+    padding: 25px 0 25px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width:  734px;
+    
+}
+
+.contact__form_address {
+    align-items:  flex-start;
+    background-color: #2d2d2d;
+    display:  flex;
+    flex-direction:  column;
+    height: 480px;
+    justify-content: center;
+    margin: 20px 0 0 50px;
+    padding: 0 0 0 80px;
+    width: 404px;
+}
+
+.contact__form_address_heading {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact__form_address_text {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.contact__form_address_link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact__form_address_right_margin {
+    
+}
+/* Footer */
+
 .footer {
     background-color: #313030;
 }
 
 .footer__content {
-    align-items:  center;
+    align-items: center;
     display:  flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -614,6 +764,8 @@
     margin: 9px 9px 9px 9px;
     width: 33px;
 }
+
+/* Media */
 
 @media screen and (max-width: 750px) {
     .intro {
