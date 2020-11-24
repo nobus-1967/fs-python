@@ -505,21 +505,30 @@
 .about__girl_portrait {
     height: 214px;
     margin: 10px 10px 0 0;
+    position: relative;
     width: 197px;
 }
 
 .about__girl_name {
     background-color: #000000;
+    bottom: 0;
     box-sizing: border-box;
     color:  #ffffff;
     font-size: 16px;
     font-weight: 700;
     height:  37px;
-    opacity:  0.7;
+    opacity:  0.5;
+    margin: 0;
     padding:  8px 0 8px 0;
+    position: absolute;
     text-align: center;
- /*    visibility: hidden; */
+    left: 0;
+    visibility: hidden;
     width: 197px;
+}
+
+.about__girl_portrait:hover > .about__girl_name {
+    visibility: visible;
 }
 
 .about__girl_portrait_picture {
@@ -725,7 +734,7 @@
 }
 
 .contact__form_address_right_margin {
-    
+
 }
 /* Footer */
 
