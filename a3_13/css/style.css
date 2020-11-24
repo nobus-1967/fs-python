@@ -696,11 +696,12 @@
     font-weight: 700;
     height: 75px;
     margin:  20px 0 0 0;
+    max-width:  734px;
     padding: 25px 0 25px 0;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    width:  734px;
+    width: 100%;
     
 }
 
@@ -709,11 +710,11 @@
     background-color: #2d2d2d;
     display:  flex;
     flex-direction:  column;
-    height: 480px;
     justify-content: center;
     margin: 20px 0 0 50px;
+    max-width: 404px;
+    min-height: 480px;
     padding: 0 20px 0 80px;
-    width: 404px;
 }
 
 .contact__form_address_heading {
