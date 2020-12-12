@@ -84,12 +84,12 @@ def play_move(player, field):
         # Check for the winner.
         winner = check_win(player, field)
         if winner:
-            print(f'\nPlayer ({player}) wins the game!')
+            print(f'Player ({player}) wins the game!')
             return True
         return False
     else:
         # End the game.
-        print('\nThat\'s a draw! The game is over.')
+        print('That\'s a draw! The game is over.')
         return True
 
 
