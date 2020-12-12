@@ -109,7 +109,6 @@ def check_empty_cells(field):
     for index in range(0, 9):
         if field[index] == '.':
             flag = True
-
     return flag
 
 
