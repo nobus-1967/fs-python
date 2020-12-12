@@ -100,7 +100,7 @@ def show_field(field):
     print('\t3', field[0], field[1], field[2], '3')
     print('\t2', field[3], field[4], field[5], '2')
     print('\t1', field[6], field[7], field[8], '1')
-    print('\t ', 'A', 'B', 'C')
+    print('\t ', 'A', 'B', 'C\n')
 
 
 def check_empty_cells(field):
