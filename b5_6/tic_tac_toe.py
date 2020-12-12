@@ -156,7 +156,6 @@ def check_player_moves(player, field):
     for i in range(0, 9):
         if field[i] == player:
             player_moves.add(i)
-
     return player_moves
 
 
