@@ -53,7 +53,7 @@ def show_rules():
     """Show brief rules of Tic Tac Toe game."""
     rules = """
 \"Tic-tac-toe" (or "Noughts and Crosses") is the game for
-two players(X and O), who take turns moving on the 3×3 field.
+two players (X and O), who take turns moving on the 3×3 field.
 The player who succeeds in placing three of their marks
 in a horizontal, vertical, or diagonal row is the winner.
 A game can also end in a draw if there's no longer any empty cells.
