@@ -3,9 +3,6 @@ class OnlineWallet:
         self.name = name
         self.balance = balance
         
-    def get_name(self):
-        return self.name
-        
     def get_balance(self):
         return self.balance       
   
