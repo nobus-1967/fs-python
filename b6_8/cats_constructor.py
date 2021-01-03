@@ -27,4 +27,4 @@ class Cat:
             print('Неправильно указан возраст (укажите: число больше 0)')
     
     def display_info(self):
-        print("Имя:", self.name, "\nПол:", self.__sex, '\nВозраст:', self.__age)
+        return f'Имя: {self.name}, \nПол: {self.__sex}, \nВозраст:, {self.__age}'
