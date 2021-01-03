@@ -1,7 +1,6 @@
 # Вариант с использованием магического метода __repr__ и переменных класса
 
 class Volunteer:
-   
     def __init__(self, name, city, status):
         self.name = name
         self.city = city
