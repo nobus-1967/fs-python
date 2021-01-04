@@ -7,6 +7,7 @@ class OnlineWallet:
         return self.balance       
   
     def set_balance(self, balance):
+        print('Введите новый баланс клиента:')
         self.balance = balance
 
     def display_info(self):
