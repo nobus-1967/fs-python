@@ -1,4 +1,4 @@
-# Вариант с использованием магического метода __repr__ и переменных класса
+# Вариант с использованием магического метода __repr__ и класса на основе списка
 
 class Volunteer:
     def __init__(self, name, city, status):
@@ -10,18 +10,19 @@ class Volunteer:
         return f'{self.name}, г. {self.city}, статус "{self.status}"'
 
 
-class VolunteerList(Volunteer):
-    people = []
-    
-    def __init__(self, name, city, status):
-        super().__init__(name, city, status)
-        self.people.append(f'{self.name}, г. {self.city}, статус "{self.status}"')
-       
+class VolunteerList(list):
+    def __init__(self, name = "Список волонтёров"):
+        super().__init__()
+        self.name = name
 
-petr_ivanov = VolunteerList('Петр Иванов', 'Санкт-Петербург', 'Волонтер')
-ivan_petrov = VolunteerList('Иван Петров', 'Москва', 'Наставник')
+    def __repr__(self):
+        text = f"{self.name}:"
+        for index, guest in enumerate(self):
+            text += f"\n{index+1}) {guest}"
+        return text
 
-guests = VolunteerList.people
-for guest in guests:
-    print(guest)
-        
+
+guests = VolunteerList("Список волонтёров 1")
+guests.append(Volunteer('Петр Иванов', 'Санкт-Петербург', 'Волонтер'))
+guests.append(Volunteer('Иван Петров', 'Москва', 'Наставник'))
+print(guests)
