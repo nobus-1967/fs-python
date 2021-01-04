@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Вариант с использованием магического метода __repr__
+=======
+# Вариант с использованием магического метода __repr__ (основан на варианте 1)
+>>>>>>> origin/main
 
 class Volunteer:
     def __init__(self, name, city):
@@ -24,4 +28,8 @@ ivan_petrov = StatusVolunteer('Иван Петров', 'Москва', 'Наст
 guests = [petr_ivanov, ivan_petrov]
 for guest in guests:
     print(guest)
+<<<<<<< HEAD
         
+=======
+        
+>>>>>>> origin/main
