@@ -53,7 +53,7 @@ class Board:
     
     def board(self):
         """Выводит игровое поле с координатами и условными обозначениями."""
-        print(f'\n\n\tИгровое поле: {self.player}')
+        print(f'\n\tИгровое поле: {self.player}')
         print(f'\t  1 2 3 4 5 6', end='')
         for index, row in enumerate(self.game_board):
             print(f'\n\t{index + 1} ', end = '')
@@ -70,6 +70,7 @@ class Board:
                     print('.', end=' ')
                 elif cell.state == 'hidden' and cell.shoot_in == 'yep':
                     print('X', end=' ')
+        print()
 
 
 class User:
@@ -95,14 +96,14 @@ class Human(User):
     def shoot(self):
         """Устанавливает координаты обстреливаемой ячейки."""
         while True:
-            choice = input('\n\nТвой выбор: ')
+            choice = input('\nТвой выбор: ')
             if len(choice) != 2:
-                print('Координаты должны быть в формате xy, где x и y - целые числа!\n')
+                print('Координаты должны быть в формате xy, где x и y - целые числа!')
                 continue        
             x = choice[0]
             y = choice[1]
             if not(x.isdigit()) or not(y.isdigit()):
-                print('Координаты должны быть числами в диапазоне 1-6!\n')
+                print('Координаты должны быть числами в диапазоне 1-6!')
                 continue
             x = int(x)
             y = int(y)
@@ -115,13 +116,13 @@ class Human(User):
                         self.shot = (x, y)
                         return self.shot
                     else:
-                        print('Сюда уже стреляли!\n')
+                        print('Сюда уже стреляли!')
                         continue
                 else:
-                    print('Координаты должны быть числами в диапазоне 1-6!\n')
+                    print('Координаты должны быть числами в диапазоне 1-6!')
                     continue
             else:
-                print('Координаты должны быть числами в диапазоне 1-6!\n')
+                print('Координаты должны быть числами в диапазоне 1-6!')
                 continue
 
 
@@ -246,27 +247,25 @@ class Game:
         self.human_squadron.place_ships()
         self.ai_squadron.place_ships()
         
-    @property
     def plays(self):
         """Управляет последовательностью игры"""
         self.human_board.board()
-        print()
         self.ai_board.board()
         move_number = 0
         while True:
             move_number += 1
             if move_number % 2 == 0:
-                print('\n\nХожу я!')
+                print('\nХожу я!')
                 self.human_board.board()
                 self.ai.shoot
                 target = self.ai.shot
                 x, y = target
-                print(f'\n\nМой выбор: {x + 1}{y + 1}')
+                print(f'\nМой выбор: {x + 1}{y + 1}')
                 self.human_board.board()
                 for ship in self.human_squadron.ships:
                     result = ship.check_ship(target)
                     if result:
-                        print('\n\nПопал!')
+                        print('\nПопал!')
                         ship.status
                         move_number -=1
                         human_alive = 0
@@ -283,7 +282,7 @@ class Game:
                     else:
                         continue             
             else:
-                print('\n\nЧеловек, твой ход!')
+                print('\nЧеловек, твой ход!')
                 self.ai_board.board()
                 self.human.shoot
                 self.ai_board.board()
@@ -291,7 +290,7 @@ class Game:
                 for ship in self.ai_squadron.ships:
                     result = ship.check_ship(target)
                     if result:
-                        print('\n\nПопал!')
+                        print('\nПопал!')
                         ship.status
                         move_number -=1
                         ai_alive = 0
@@ -302,7 +301,7 @@ class Game:
                         if ai_alive > 0:
                             continue                        
                         else: 
-                            print('\n\nЧеловек, ты победил!')
+                            print('\nЧеловек, ты победил!')
                             return False
                     else:
                         continue
@@ -312,7 +311,7 @@ class Game:
         print('Добро пожаловать в игру "Морской бой"!')
         print('Я - AI (искусственный интеллект) и я сражусь с тобой, Человек.')
         print('Корабли на местах, капитаны на мостиках. Начинаем!')
-        print('\n\nВведи цель для выстрела - координаты формата xy,')
+        print('\nВведи цель для выстрела - координаты формата xy,')
         print('где x - номер строки, y - номер столбца (например, 01 или 33)')
 
     def goodbye(self):
@@ -323,5 +322,5 @@ class Game:
 game = Game()
 game.place_squadrons()  
 game.greet()
-game.plays
+game.plays()
 game.goodbye()
