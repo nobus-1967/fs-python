@@ -60,19 +60,19 @@ def examples(message: telebot.types.Message):
 @bot.message_handler(content_types=['text'])
 def convert(message: telebot.types.Message):
     try:
-        values = message.text.split(' ')
-        if len(values) != 3:
-            raise APIException('Обратитесь к командам /help или /example.')       
+        query = message.text.split(' ')
+        if len(query) != 3:
+            raise APIException('Обратитесь к командам /help или /example.')
+        base, quote, amount = query
     except APIException as e:
         bot.send_message(message.chat.id,
                          f'Ошибка ввода команды!\n{e}')
     except Exception as e:
         bot.send_message(message.chat.id,
-                         'Не удалось обработать команду {e}!')
+                         f'Не удалось обработать команду {e}!')
     else:
-        base, quote, amount = values
         total = ExchangeCurrencies.get_price(base, quote, amount)
         bot.reply_to(message, total)
 
 
-bot.polling(none_stop=True)
+bot.polling()

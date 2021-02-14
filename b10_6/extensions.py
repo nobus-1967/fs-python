@@ -38,7 +38,7 @@ class ExchangeCurrencies:
                 cur_info = requests.get(f'https://api.exchangeratesapi.io/latest?symbols={quote}')
             else:
                 cur_info = requests.get(f'https://api.exchangeratesapi.io/latest?base={base}&symbols={quote},{base}')
-                rate = json.loads(cur_info.content)['rates']
-                total = rate[quote] * int_amount
+            cur_rate = json.loads(cur_info.content)['rates']
+            sum = cur_rate[quote] * int_amount
         
-        return f'{total: .2f}' 
+        return f'{sum: .2f}' 
