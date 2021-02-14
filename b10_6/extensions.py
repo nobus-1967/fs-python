@@ -32,7 +32,7 @@ class ExchangeCurrencies:
         except KeyError:
             return 'Такая валюта в списке доступных отсутствует!'
         except ValueError:
-            return 'Количество первой валюты: введите целое число больше 0!'
+            return 'Количество первой валюты: цифрами целое число больше 0!'
         else:                
             if base == 'EUR':
                 cur_info = requests.get(f'https://api.exchangeratesapi.io/latest?symbols={quote}')

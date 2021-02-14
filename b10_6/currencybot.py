@@ -21,7 +21,7 @@ def help(message: telebot.types.Message):
     <имя валюты, цену которой вы хотите узнать>
     <имя валюты, в которой надо узнать цену первой валюты>
     <количество первой валюты>
-Валюты вводятся прописными буквами, а количество цифрами, например:
+Валюты вводятся строчными буквами, а количество цифрами, например:
     доллар рубль 100
 Примеры команд для конвертации выводятся командой /examples.
 Информация о доступных валютах выводится командой /values.
@@ -52,14 +52,14 @@ def examples(message: telebot.types.Message):
     (50 иен в юани) -> иена юань 50
     (200 евро в фунты) -> евро фунт 200
 Информация о доступных валютах выводится командой /values.
-При конвертации итоговая сумма округляется до целого числа!
     """
     bot.send_message(message.chat.id, text)
 
 @bot.message_handler(content_types=['text'])
 def convert(message: telebot.types.Message):
     try:
-        query = message.text.split(' ')
+        text = message.text.lower()
+        query = text.split(' ')
         if len(query) != 3:
             raise APIException('Обратитесь к командам /help или /example.')
         base, quote, amount = query
